@@ -25,16 +25,16 @@ export default function Home() {
 
         <p>
           This guide walks you through the manual setup for the Flux Kontext workflow.
-          For the best experience, right-click any file link and choose <strong>"Save Link As..."</strong> into the specified folder.
+          For the best experience, right-click any file link and choose <strong>&quot;Save Link As...&quot;</strong> into the specified folder.
         </p>
 
         <h2>⚡ Prefer to skip all this?</h2>
         <p>
           Just use the one-click installer. It sets everything up automatically (models, nodes, dependencies).
-          This manual guide is only here in case you're on unsupported hardware or want full control.
+          This manual guide is only here in case you&apos;re on unsupported hardware or want full control.
         </p>
 
-        <p>✅ If you're using ComfyUI Desktop, you're fully supported.</p>
+        <p>✅ If you&apos;re using ComfyUI Desktop, you&apos;re fully supported.</p>
 
         <h2>📦 Custom Nodes</h2>
         <p>Open a terminal inside the <code>custom_nodes/</code> folder and run:</p>
@@ -57,8 +57,10 @@ Mac:
           <code>python -m pip install -r custom_nodes/ComfyUI-SmartModelLoaders-MXD/requirements.txt</code>
         </pre>
 
+        <p>That&apos;s it. ✅</p>
+
         <h2>💾 Core Files</h2>
-        <p><strong>Right-click any file link → choose "Save Link As..." → Save into the specified folder inside <code>ComfyUI/models/</code></strong></p>
+        <p><strong>Right-click any file link → choose &quot;Save Link As...&quot; → Save into the specified folder inside <code>ComfyUI/models/</code></strong></p>
 
         <ul>
           <li>ae.safetensors ➡️ <code>vae/</code></li>
@@ -74,9 +76,9 @@ Mac:
           <li><strong>All other NVIDIA GPUs:</strong> svdq-int4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
         </ul>
 
-        <h2>📎 CLIP & T5 Models</h2>
+        <h2>📎 CLIP &amp; T5 Models</h2>
         <p>
-          Select <strong>ONE</strong> T5 model based on your system's RAM (not VRAM) and place into <code>models/clip/</code>.
+          Select <strong>ONE</strong> T5 model based on your system&apos;s RAM (not VRAM) and place into <code>models/clip/</code>.
         </p>
 
         <ul>
@@ -99,7 +101,7 @@ Mac:
         </ul>
 
         <h2>✅ Done!</h2>
-        <p>Once you've:</p>
+        <p>Once you&apos;ve:</p>
         <ul>
           <li>Downloaded your models</li>
           <li>Selected one UNet + one T5 tier</li>
@@ -107,8 +109,8 @@ Mac:
           <li>Installed my nodes and their requirements</li>
         </ul>
 
-        <p>You're ready to run the Flux Kontext workflow manually 🎉</p>
-        <p>Enjoy! And if you're stuck, you can always fall back to the one-click installer.</p>
+        <p>You&apos;re ready to run the Flux Kontext workflow manually 🎉</p>
+        <p>Enjoy! And if you&apos;re stuck, you can always fall back to the one-click installer.</p>
 
         <p style={{ marginTop: '3rem', fontSize: '0.9rem', color: '#888' }}>
           This site is maintained by MaxedOut.
