@@ -27,83 +27,85 @@ export default function Home() {
             <p className="mt-2">✅ If you’re using ComfyUI Desktop, you’re fully supported.</p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">📦 Custom Nodes</h2>
-            <p>Open a terminal inside the <code>custom_nodes/</code> folder and run:</p>
-            <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
-              <code>{`git clone https://github.com/Maxed-Out-99/ComfyUI-MaxedOut.git
+          <ol className="list-decimal pl-6 space-y-8">
+            <li>
+              <h2 className="text-xl font-semibold mt-6">📦 Custom Nodes</h2>
+              <p>Open a terminal inside the <code>custom_nodes/</code> folder and run:</p>
+              <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
+                <code>{`git clone https://github.com/Maxed-Out-99/ComfyUI-MaxedOut.git
 git clone https://github.com/Maxed-Out-99/ComfyUI-SmartModelLoaders-MXD.git`}</code>
-            </pre>
-          </section>
+              </pre>
+            </li>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">🔧 Install Node Requirements</h2>
-            <p>Now activate your virtual environment:</p>
-            <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
-              <code>{`Windows:
+            <li>
+              <h2 className="text-xl font-semibold mt-6">🔧 Install Node Requirements</h2>
+              <p>Now activate your virtual environment:</p>
+              <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
+                <code>{`Windows:
 .venv\\Scripts\\activate
 
 Mac:
 /.venv/bin/activate`}</code>
-            </pre>
-            <p>Then install the node requirements:</p>
-            <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
-              <code>python -m pip install -r custom_nodes/ComfyUI-SmartModelLoaders-MXD/requirements.txt</code>
-            </pre>
-            <p>That’s it. ✅</p>
-          </section>
+              </pre>
+              <p>Then install the node requirements:</p>
+              <pre className="bg-neutral-900 p-4 rounded text-sm overflow-x-auto">
+                <code>python -m pip install -r custom_nodes/ComfyUI-SmartModelLoaders-MXD/requirements.txt</code>
+              </pre>
+              <p>That’s it. ✅</p>
+            </li>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">💾 Core Files</h2>
-            <p>
-              <strong>Right-click any file link → choose “Save Link As…” → Save into the specified folder inside</strong> <code>ComfyUI/models/</code>
-            </p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>ae.safetensors ➡️ <code>vae/</code></li>
-              <li>clip_l.safetensors ➡️ <code>clip/</code></li>
-            </ul>
-            <p className="mt-4">
-              ⚠️ <strong>Optional:</strong> download a quantized Nunchaku model for faster performance on NVIDIA GPUs only:
-            </p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>RTX 50 series only:</strong> svdq-fp4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
-              <li><strong>All other NVIDIA GPUs:</strong> svdq-int4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
-            </ul>
-          </section>
+            <li>
+              <h2 className="text-xl font-semibold mt-6">💾 Core Files</h2>
+              <p>
+                <strong>Right-click any file link → choose “Save Link As…” → Save into the specified folder inside</strong> <code>ComfyUI/models/</code>
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>ae.safetensors ➡️ <code>vae/</code></li>
+                <li>clip_l.safetensors ➡️ <code>clip/</code></li>
+              </ul>
+              <p className="mt-4">
+                ⚠️ <strong>Optional:</strong> download a quantized Nunchaku model for faster performance on NVIDIA GPUs only:
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li><strong>RTX 50 series only:</strong> svdq-fp4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
+                <li><strong>All other NVIDIA GPUs:</strong> svdq-int4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
+              </ul>
+            </li>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">📎 CLIP & T5 Models</h2>
-            <p>Select <strong>ONE</strong> T5 model based on your system’s RAM (not VRAM) and place into <code>models/clip/</code>.</p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Tier A (32GB):</strong> t5xxl_fp16.safetensors</li>
-              <li><strong>Tier B (16GB):</strong> t5xxl_fp8_scaled.safetensors</li>
-              <li><strong>Tier C (Less than 16GB):</strong> t5xxl_Q5_K_M.gguf</li>
-            </ul>
-          </section>
+            <li>
+              <h2 className="text-xl font-semibold mt-6">📎 CLIP & T5 Models</h2>
+              <p>Select <strong>ONE</strong> T5 model based on your system’s RAM (not VRAM) and place into <code>models/clip/</code>.</p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li><strong>Tier A (32GB):</strong> t5xxl_fp16.safetensors</li>
+                <li><strong>Tier B (16GB):</strong> t5xxl_fp8_scaled.safetensors</li>
+                <li><strong>Tier C (Less than 16GB):</strong> t5xxl_Q5_K_M.gguf</li>
+              </ul>
+            </li>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">🧠 UNet Models</h2>
-            <p>Choose one UNet model based on your GPU VRAM. Save into <code>models/diffusion_models/</code>.</p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>🔶 Tier S (32GB VRAM):</strong> flux1-kontext-dev.safetensors</li>
-              <li><strong>🔶 Tier A (16–31GB VRAM):</strong> flux1-dev-kontext_fp8_scaled.safetensors</li>
-              <li><strong>🔶 Tier B (12–15GB VRAM):</strong> flux1-kontext-dev-Q5_K_M.gguf</li>
-              <li><strong>🔶 Tier C (Under 12GB / Apple Silicon / CPU):</strong> flux1-kontext-dev-Q3_K_S.gguf</li>
-            </ul>
-          </section>
+            <li>
+              <h2 className="text-xl font-semibold mt-6">🧠 UNet Models</h2>
+              <p>Choose one UNet model based on your GPU VRAM. Save into <code>models/diffusion_models/</code>.</p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li><strong>🔶 Tier S (32GB VRAM):</strong> flux1-kontext-dev.safetensors</li>
+                <li><strong>🔶 Tier A (16–31GB VRAM):</strong> flux1-dev-kontext_fp8_scaled.safetensors</li>
+                <li><strong>🔶 Tier B (12–15GB VRAM):</strong> flux1-kontext-dev-Q5_K_M.gguf</li>
+                <li><strong>🔶 Tier C (Under 12GB / Apple Silicon / CPU):</strong> flux1-kontext-dev-Q3_K_S.gguf</li>
+              </ul>
+            </li>
 
-          <section>
-            <h2 className="text-xl font-semibold mt-6">✅ Done!</h2>
-            <p>Once you’ve:</p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>Downloaded your models</li>
-              <li>Selected one UNet + one T5 tier</li>
-              <li>Placed everything into the correct folders</li>
-              <li>Installed my nodes and their requirements</li>
-            </ul>
-            <p className="mt-2">You’re ready to run the Flux Kontext workflow manually 🎉</p>
-            <p>Enjoy! And if you’re stuck, you can always fall back to the one-click installer.</p>
-          </section>
+            <li>
+              <h2 className="text-xl font-semibold mt-6">✅ Done!</h2>
+              <p>Once you’ve:</p>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>Downloaded your models</li>
+                <li>Selected one UNet + one T5 tier</li>
+                <li>Placed everything into the correct folders</li>
+                <li>Installed my nodes and their requirements</li>
+              </ul>
+              <p className="mt-2">You’re ready to run the Flux Kontext workflow manually 🎉</p>
+              <p>Enjoy! And if you’re stuck, you can always fall back to the one-click installer.</p>
+            </li>
+          </ol>
 
           <footer className="text-sm text-neutral-500 pt-8 border-t border-neutral-800">
             This site is maintained by MaxedOut.
