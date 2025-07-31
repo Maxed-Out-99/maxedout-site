@@ -6,6 +6,13 @@ export default function Home() {
       <Head>
         <title>MaxedOut Flux Installer Guide</title>
         <meta name="description" content="Download and install the MaxedOut Flux Workflow for ComfyUI. Easy setup, no fluff." />
+        <meta property="og:title" content="MaxedOut Flux Installer Guide" />
+        <meta property="og:description" content="Download and install the MaxedOut Flux Workflow for ComfyUI. Easy setup, no fluff." />
+        <meta property="og:image" content="/globe.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MaxedOut Flux Installer Guide" />
+        <meta name="twitter:description" content="Download and install the MaxedOut Flux Workflow for ComfyUI. Easy setup, no fluff." />
+        <meta name="twitter:image" content="/globe.svg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
