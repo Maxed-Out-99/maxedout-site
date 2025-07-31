@@ -59,15 +59,15 @@ Mac:
               <strong>Right-click any file link → choose “Save Link As…” → Save into the specified folder inside</strong> <code>ComfyUI/models/</code>
             </p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>ae.safetensors ➡️ <code>vae/</code></li>
-              <li>clip_l.safetensors ➡️ <code>clip/</code></li>
+              <li><a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/ae.safetensors" download>ae.safetensors</a> ➡️ <code>vae/</code></li>
+              <li><a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/clip_l.safetensors" download>clip_l.safetensors</a> ➡️ <code>clip/</code></li>
             </ul>
             <p className="mt-4">
               ⚠️ <strong>Optional:</strong> download a quantized Nunchaku model for faster performance on NVIDIA GPUs only:
             </p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>RTX 50 series only:</strong> svdq-fp4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
-              <li><strong>All other NVIDIA GPUs:</strong> svdq-int4_r32-flux.1-kontext-dev.safetensors ➡️ <code>diffusion_models/</code></li>
+              <li><strong>RTX 50 series only:</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/svdq-fp4_r32-flux.1-kontext-dev.safetensors" download>svdq-fp4_r32-flux.1-kontext-dev.safetensors</a> ➡️ <code>diffusion_models/</code></li>
+              <li><strong>All other NVIDIA GPUs:</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/svdq-int4_r32-flux.1-kontext-dev.safetensors" download>svdq-int4_r32-flux.1-kontext-dev.safetensors</a> ➡️ <code>diffusion_models/</code></li>
             </ul>
           </section>
 
@@ -75,9 +75,9 @@ Mac:
             <h2 className="text-xl font-semibold mt-6">📎 CLIP & T5 Models</h2>
             <p>Select <strong>ONE</strong> T5 model based on your system’s RAM (not VRAM) and place into <code>models/clip/</code>.</p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Tier A (32GB):</strong> t5xxl_fp16.safetensors</li>
-              <li><strong>Tier B (16GB):</strong> t5xxl_fp8_scaled.safetensors</li>
-              <li><strong>Tier C (Less than 16GB):</strong> t5xxl_Q5_K_M.gguf</li>
+              <li><strong>Tier A (32GB):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/t5xxl_fp16.safetensors" download>t5xxl_fp16.safetensors</a></li>
+              <li><strong>Tier B (16GB):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/t5xxl_fp8_scaled.safetensors" download>t5xxl_fp8_scaled.safetensors</a></li>
+              <li><strong>Tier C (Less than 16GB):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/t5xxl_Q5_K_M.gguf" download>t5xxl_Q5_K_M.gguf</a></li>
             </ul>
           </section>
 
@@ -85,10 +85,10 @@ Mac:
             <h2 className="text-xl font-semibold mt-6">🧠 UNet Models</h2>
             <p>Choose one UNet model based on your GPU VRAM. Save into <code>models/diffusion_models/</code>.</p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>🔶 Tier S (32GB VRAM):</strong> flux1-kontext-dev.safetensors</li>
-              <li><strong>🔶 Tier A (16–31GB VRAM):</strong> flux1-dev-kontext_fp8_scaled.safetensors</li>
-              <li><strong>🔶 Tier B (12–15GB VRAM):</strong> flux1-kontext-dev-Q5_K_M.gguf</li>
-              <li><strong>🔶 Tier C (Under 12GB / Apple Silicon / CPU):</strong> flux1-kontext-dev-Q3_K_S.gguf</li>
+              <li><strong>🔶 Tier S (32GB VRAM):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/flux1-kontext-dev.safetensors" download>flux1-kontext-dev.safetensors</a></li>
+              <li><strong>🔶 Tier A (16–31GB VRAM):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/flux1-dev-kontext_fp8_scaled.safetensors" download>flux1-dev-kontext_fp8_scaled.safetensors</a></li>
+              <li><strong>🔶 Tier B (12–15GB VRAM):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/flux1-kontext-dev-Q5_K_M.gguf" download>flux1-kontext-dev-Q5_K_M.gguf</a></li>
+              <li><strong>🔶 Tier C (Under 12GB / Apple Silicon / CPU):</strong> <a href="https://huggingface.co/Maxed-Out-99/FluxKontext/resolve/main/flux1-kontext-dev-Q3_K_S.gguf" download>flux1-kontext-dev-Q3_K_S.gguf</a></li>
             </ul>
           </section>
 
