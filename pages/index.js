@@ -9,10 +9,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-black text-white px-6 py-10 sm:px-8 md:px-10">
+      <main className="min-h-screen bg-background text-foreground px-6 py-10 sm:px-8 md:px-10">
         <div className="max-w-3xl mx-auto space-y-8 leading-relaxed text-base">
 
-          <h1 className="text-3xl font-bold text-white">MaxedOut Flux Installer Guide 🚀</h1>
+          <h1 className="text-3xl font-bold text-foreground">MaxedOut Flux Installer Guide 🚀</h1>
           <p>
             This guide walks you through the manual setup for the Flux Kontext workflow.
             For the best experience, right-click any file link and choose <strong>“Save Link As…”</strong> into the specified folder.
